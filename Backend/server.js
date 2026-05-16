@@ -1,30 +1,24 @@
 const express = require('express')
-
 const cors = require('cors')
-
 const inventoryRoutes = require('./routes/inventoryRoutes')
 
 const app = express()
 
-app.use(cors())
+const allowedOrigins = [
+  'http://localhost:5173',
+  process.env.FRONTEND_URL,
+].filter(Boolean)
+
+app.use(cors({
+  origin: allowedOrigins,
+}))
 
 app.use(express.json())
 
 app.get('/', (req, res) => {
   res.send('Aura Enterprise Backend Running')
 })
-app.get("/api/products", (req, res) => {
-  res.json({
-    success: true,
-    data: [
-      {
-        id: 1,
-        name: "Demo Product",
-        stock: 25
-      }
-    ]
-  });
-});
+
 
 app.use('/api/inventory', inventoryRoutes)
 
