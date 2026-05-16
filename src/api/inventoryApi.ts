@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL
-  ? `${import.meta.env.VITE_API_URL}/api/inventory`
-  : 'http://localhost:5000/api/inventory'
+const VITE_API_URL = import.meta.env.VITE_API_URL
+const BASE_URL = VITE_API_URL ? VITE_API_URL.replace(/\/$/, '') : 'http://localhost:5000'
+const API_URL = `${BASE_URL}/api/products`
 
 export type SortOrder = 'asc' | 'desc'
 

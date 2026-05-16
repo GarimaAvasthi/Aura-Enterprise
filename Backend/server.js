@@ -44,17 +44,19 @@ app.get('/', (req, res) => {
     status: 'ok',
     message: 'Aura Enterprise API Running',
     endpoints: [
+      '/api/products',
       '/api/inventory',
-      '/api/inventory/metadata',
-      '/api/inventory/kpis',
-      '/api/inventory/low-stock',
-      '/api/inventory/restock-priority',
-      '/api/inventory/category-value',
-      '/api/inventory/export',
+      '/api/products/metadata',
+      '/api/products/kpis',
+      '/api/products/low-stock',
+      '/api/products/restock-priority',
+      '/api/products/category-value',
+      '/api/products/export',
     ],
   })
 })
 
+app.use('/api/products', inventoryRoutes)
 app.use('/api/inventory', inventoryRoutes)
 
 app.listen(PORT, () => {
