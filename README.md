@@ -21,6 +21,17 @@ A high-performance, real-time analytics and inventory management dashboard built
 - **Visualizations:** Recharts (heavily customized with native SVG defs).
 - **Backend:** Express.js (Node.js) with dynamic, in-memory data generation.
 
+## 🚀 Live Deployment
+
+- **Frontend App:** [https://aura-enterprise-bgpb.vercel.app/](https://aura-enterprise-bgpb.vercel.app/)
+- **Backend API:** [https://aura-enterprise-1.onrender.com/](https://aura-enterprise-1.onrender.com/)
+
+## ☁️ Deployment Strategy
+
+This project is architected for seamless cloud deployment:
+- **Frontend:** Optimized for **Vercel** (using `vercel.json` for SPA routing) and **Netlify**. Both platforms provide excellent performance for Vite-based React applications.
+- **Backend:** Hosted on **Render**, utilizing Express.js to serve the dynamic inventory data and KPIs.
+
 ## 📦 Quick Start
 
 1. **Install Dependencies:**
