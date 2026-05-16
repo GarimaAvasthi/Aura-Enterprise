@@ -23,7 +23,7 @@ A high-performance, real-time analytics and inventory management dashboard built
 
 ## 🚀 Live Deployment
 
-- **Frontend App:** [https://aura-enterprise-bgpb.vercel.app/](https://aura-enterprise-bgpb.vercel.app/)
+- **Frontend App:** [https://aura-enterprise-bgpb.vercel.app/]
 - **Backend API:** [https://aura-enterprise-1.onrender.com/](https://aura-enterprise-1.onrender.com/)
 
 ## ☁️ Deployment Strategy
